@@ -26,11 +26,39 @@ To write a Python program to:
 ---
 
 ## 💻  Program
-
-Add Code Here
+```
+n = int(input("Enter number of students: "))
+students = []
+for _ in range(n):
+    name = input("Enter student name: ")
+    grade = float(input("Enter student grade: "))
+    students.append([name, grade])
+grades = sorted(set([grade for _, grade in students]))
+second_lowest = grades[1] if len(grades) > 1 else grades[0]
+second_lowest_students = [name for name, grade in students if grade == second_lowest]
+second_lowest_students.sort()
+print("\nStudents with the second lowest grade:")
+for student in second_lowest_students:
+    print(student)
+```
 
 ## Output
+```
+Enter number of students: 5
+Enter student name: Harry
+Enter student grade: 37.2
+Enter student name: Berry
+Enter student grade: 37.2
+Enter student name: Tina
+Enter student grade: 37.3
+Enter student name: Akriti
+Enter student grade: 41
+Enter student name: Harsh
+Enter student grade: 39
 
+Students with the second lowest grade:
+Harsh
+```
 ## Result
-
+Hence Founded Students with the Second Lowest Grade.
 
