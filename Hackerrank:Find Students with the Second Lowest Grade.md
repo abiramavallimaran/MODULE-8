@@ -60,5 +60,5 @@ Students with the second lowest grade:
 Harsh
 ```
 ## Result
-Hence Founded Students with the Second Lowest Grade.
+Hence Found Students with the Second Lowest Grade.
 
